@@ -4,5 +4,9 @@ Rails.application.routes.draw do
   get 'pages/Prototype'
   get 'pages/Contact'
   get 'pages/OC_Coin'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  Rails.application.routes.draw do
+    root 'application#testcode'
+  end
+
 end
