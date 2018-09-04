@@ -4,21 +4,30 @@
     <title>OC</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= image_tag("OC_Logo.png")%>
-
-
-
-
-    <div class="hr"><hr></div>
-
-
-
+      <div class="hr"><hr></div>
   </head>
-
-  <body>
     <%= yield %>
-  </body>
+    <body>
+      <header class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <%= link_to "Home", '#', id: "logo" %>
+          <nav>
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "Log in",   '#' %></li>
+              <li><%= link_to "Prototype",   '#' %></li>
+              <li><%= link_to "Blueprints", '#' %></li>
+              <li><%= link_to "OC_Coin", '#' %></li>
+              <li><%= link_to "Contact", '#' %></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+
+      </div>
+    </body>
+
 </html>
