@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'user/new'
   get 'pages/Home'
   get 'pages/Blueprints'
   get 'pages/Prototype'
@@ -6,6 +7,7 @@ Rails.application.routes.draw do
   get 'pages/OC_Coin'
 
   Rails.application.routes.draw do
+  get 'user/new'
     root 'application#testcode'
   end
 
